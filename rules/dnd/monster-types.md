@@ -1,0 +1,37 @@
+---
+title: Monster Types
+reference: Monster Manual, page 6
+---
+
+- Aberrations
+  - Weird aliens from other places
+- Beasts
+  - Regular animals
+  - Not tied to what exists in the real world, they may have some supernatural elements
+- Celestials
+  - Angels and the like
+  - Counterpart to fiends
+- Constructs
+  - Creatures that have been built
+- Dragons
+  - Both true dragons, and their relatives
+- Elementals
+  - Creatures intrinsically tied to earth, air, fire and water
+- Fey
+  - Creatures intrinsically tied to the Feywild, or nature
+- Fiends
+  - Devils, demons and the like
+  - Counterpart to celestials
+- Giants
+  - Large humanoids
+- Humanoids
+  - Playable races (almost exclusively)
+  - Small-to-medium creatures with approximately two arms and two legs
+- Monstrosities
+  - Something of a catch-all for "monsters" in general
+- Oozes
+  - Semi-liquid creatures
+- Plants
+  - Animated plants
+- Undead
+  - Reanimated corpses

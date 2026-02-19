@@ -1,0 +1,24 @@
+{
+  "name": "bun-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write --log-level warn .",
+    "test": "bun run format && bun test",
+    "build": "bun run build.ts"
+  },
+  "dependencies": {
+    "@metalsmith/layouts": "^3.0.0",
+    "@metalsmith/markdown": "^1.10.0",
+    "jstransformer-nunjucks": "^1.2.0",
+    "marked": "^17.0.1",
+    "metalsmith": "^2.7.0",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.7.4",
+    "yaml": "^2.8.2"
+  }
+}
