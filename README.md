@@ -12,31 +12,8 @@ To install dependencies:
 bun install
 ```
 
-To start a development server:
+To build the static site:
 
 ```bash
-bun dev
+bun run build
 ```
-
-To run for production:
-
-```bash
-bun start
-```
-
-This project was created using `bun init` in bun v1.3.4. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
-
-## TODO (MVP)
-
-- [ ] _Basic_ page layout
-  - [ ] Header
-  - [ ] CSS
-- [ ] Rewrite the index.md file to link to sub-pages
-- [ ] Github actions for publish on push to main
-- [ ] Github config for locking down main, plus PR review
-- [ ] Contributing.md
-
-### Follow-Ons
-
-- [ ] Multi-game bonus
-- [ ] Per-game styling
