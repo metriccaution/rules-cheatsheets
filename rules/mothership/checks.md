@@ -8,8 +8,8 @@ reference:
 - Determine which **stat** / **save** to check against
   - If you’re using one of your **skills**, add it to your **stat** for this check
 - Roll a d100
-  - Equal to or under - **success**
-  - Otherwise - **failure**, gain 1 **stress**
-  - **Doubles** - critical (pass or fail)
-- **Advantage** - roll twice, take the lower result
-- **Disadvantage** - roll twice, take the higher result
+  - Equal to or under: **success**
+  - Otherwise: **failure**, gain 1 **stress**
+  - **Doubles**: critical (pass or fail)
+- **Advantage**: roll twice, take the lower result
+- **Disadvantage**: roll twice, take the higher result

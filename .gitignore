@@ -36,3 +36,6 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 # Built files
 generated
 static
+
+# Rulebook PDFs (large binaries, stored locally only)
+pdfs/

@@ -1,8 +1,7 @@
 ---
 title: Rolling Dice
 reference:
-  - Wildsea, page 40
-  - Wildsea, page 41
+  - Wildsea, page 40-42
 ---
 
 # Dice Pools
@@ -11,6 +10,7 @@ reference:
 
 - You can only use one edge and one skill or language for a roll
 - Advantage is situational bonuses (discuss with the firefly)
+- If you have nothing to draw from, roll 1d6 and count triumph results as conflicts instead
 
 # Outcome
 
@@ -27,7 +27,7 @@ Pick the highest dice in the pool, thats the result.
 - If you roll _doubles_, the roll also introduces a twist
   - If you roll multiple doubles, its still just a single twist
 - Some narrative addition to the outcome
-  - Decided by everyone _except_ the player that rolled
+  - Suggested by anyone else at the table, with the firefly having final say
   - Often beneficial, but don't have to be
 
 # Cut
