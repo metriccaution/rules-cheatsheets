@@ -1,7 +1,3 @@
-/**
- * Builds all the markdown config into data.
- */
-
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { basename, join } from "node:path";
 import prettier from "prettier";
@@ -28,14 +24,26 @@ export type Rule = z.infer<typeof ruleSchema>;
 
 export interface GameSystem {
   name: string;
+  slug: string;
   rules: Rule[];
 }
 
-export async function loadRules(rulesDirectory: string): Promise<GameSystem> {
-  return {
-    name: "Dungeons & Dragons - 5th Edition",
-    rules: await loadGame(rulesDirectory),
-  };
+export async function discoverSystems(rulesRoot: string): Promise<GameSystem[]> {
+  const systems: GameSystem[] = [];
+  for (const entry of await readdir(rulesRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const slug = entry.name;
+    let meta: { name: string };
+    try {
+      meta = yaml.parse(
+        await readFile(join(rulesRoot, slug, "_meta.yaml"), "utf-8"),
+      ) as { name: string };
+    } catch {
+      continue;
+    }
+    systems.push({ name: meta.name, slug, rules: await loadGame(join(rulesRoot, slug)) });
+  }
+  return systems;
 }
 
 export async function writeGameSystem(
@@ -51,17 +59,30 @@ export async function writeGameSystem(
 
   await writeFile(
     join(outputDirectory, "index.md"),
-
-    `---\n${yaml.stringify({ title: game.name })}---\n\n# ${game.name}\n\n` +
+    `---\n${yaml.stringify({ title: game.name })}---\n\n<p><a class="back-link" href="../">← All Systems</a></p>\n\n# ${game.name}\n\n` +
       indentTitles(
         game.rules.map((r) => ruleToMarkdown(r, false)).join("\n\n"),
       ),
   );
 }
 
-/**
- * Load a directory's content as parsed data.
- */
+export async function writeLandingPage(
+  systems: GameSystem[],
+  outputDirectory: string,
+): Promise<void> {
+  const cards = systems
+    .map(
+      (s) =>
+        `<a class="system-card" href="./${s.slug}/">\n  <span class="system-card-name">${s.name}</span>\n  <span class="system-card-count">${s.rules.length} rules</span>\n</a>`,
+    )
+    .join("\n\n");
+
+  await writeFile(
+    join(outputDirectory, "index.md"),
+    `---\n${yaml.stringify({ title: "Rules Reference", layout: "landing.nunjucks" })}---\n\n# Rules Reference\n\n${cards}\n`,
+  );
+}
+
 async function loadGame(gameDirectory: string): Promise<Rule[]> {
   const rules: Rule[] = [];
 
@@ -81,9 +102,6 @@ async function loadGame(gameDirectory: string): Promise<Rule[]> {
   return rules.sort((a, b) => a.title.localeCompare(b.title));
 }
 
-/**
- * Parse the content of a markdown file into structured data.
- */
 async function parseMarkdown(fileName: string, rawText: string): Promise<Rule> {
   const sections = rawText.split(/^-{3,}$/gim);
   if (sections.length < 3) {
@@ -118,9 +136,6 @@ async function parseMarkdown(fileName: string, rawText: string): Promise<Rule> {
   });
 }
 
-/**
- * Generate markdown for a rule
- */
 function ruleToMarkdown(
   rule: Rule,
   includeFrontmatter: boolean = true,

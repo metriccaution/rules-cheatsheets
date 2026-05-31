@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <!-- Build time: {{buildTime}} -->
+    <main class="main">
+      {{ contents | safe }}
+    </main>
+
+    <style>
+      :root {
+        --accent-primary: #c25230;
+        --accent-secondary: #5a9e50;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: #1c1c1e;
+        background: #1a1a1a;
+        margin: 0;
+        padding: 0;
+      }
+
+      .main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+      }
+
+      .main > h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #f0ede8;
+        margin: 0 0 1.75rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 2px solid var(--accent-primary);
+      }
+
+      /* System selector cards */
+      .system-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        border-radius: 6px;
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
+        text-decoration: none;
+        color: inherit;
+        border-left: 3px solid transparent;
+        transition: border-color 0.15s, box-shadow 0.15s;
+      }
+
+      .system-card:hover {
+        border-left-color: var(--accent-primary);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.06);
+      }
+
+      .system-card-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--accent-primary);
+      }
+
+      .system-card-count {
+        font-size: 0.85rem;
+        color: #999;
+      }
+
+      p {
+        margin: 0.4rem 0 0.6rem;
+      }
+    </style>
+  </body>
+</html>
