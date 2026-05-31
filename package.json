@@ -19,6 +19,7 @@
   "devDependencies": {
     "@types/bun": "latest",
     "prettier": "^3.7.4",
+    "serve": "^14.2.6",
     "yaml": "^2.8.2"
   }
 }

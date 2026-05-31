@@ -129,8 +129,10 @@ function ruleToMarkdown(
     includeFrontmatter
       ? `---\n${yaml.stringify({ title: rule.title })}---`
       : "",
+    '<section class="rule markdown">',
     `# ${rule.title}`,
     indentTitles(rule.content),
+    "</section>",
   ]
     .join("\n\n")
     .trim();

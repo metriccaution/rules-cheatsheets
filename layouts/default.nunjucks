@@ -2,10 +2,218 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }}</title>
   </head>
   <body>
     <!-- Build time: {{buildTime}} -->
-    {{ contents | safe }}
+    <header class="search-bar">
+      <input
+        type="search"
+        id="search"
+        placeholder="Search rules…"
+        autocomplete="off"
+        aria-label="Search rules"
+      />
+    </header>
+    <main class="main">
+      {{ contents | safe }}
+    </main>
+
+    <style>
+      :root {
+        --accent-primary: #c25230;
+        --accent-secondary: #5a9e50;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: #1c1c1e;
+        background: #1a1a1a;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Sticky search bar */
+      .search-bar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #1a1a1a;
+        padding: 0.6rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .search-bar input {
+        display: block;
+        width: 100%;
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0.45rem 0.75rem;
+        font-size: 1rem;
+        font-family: inherit;
+        color: inherit;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      .search-bar input:focus {
+        border-color: var(--accent-primary);
+        box-shadow: 0 0 0 2px rgba(194, 82, 48, 0.15);
+      }
+
+      .main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 3rem;
+      }
+
+      /* Page-level title on the index */
+      .main > h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #f0ede8;
+        margin: 0 0 1.75rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 2px solid var(--accent-primary);
+      }
+
+      /* Rule cards */
+      .rule {
+        background: #fff;
+        border-radius: 6px;
+        padding: 1.25rem 1.5rem 1rem;
+        margin-bottom: 1.25rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
+      }
+
+      /* Suppress the duplicate rule-title heading that the template emits */
+      .rule > h1 + h2,
+      .rule > h2 + h3 {
+        display: none;
+      }
+
+      /* Rule title headings */
+      .rule > h1,
+      .rule > h2 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--accent-primary);
+        margin: 0 0 0.75rem;
+        padding-bottom: 0.35rem;
+        border-bottom: 1px solid #e8e0d8;
+      }
+
+      /* Section headings within a rule */
+      .rule h3,
+      .rule h4 {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--accent-secondary);
+        margin: 1.1rem 0 0.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+      }
+
+      /* Bold text */
+      .rule strong {
+        color: var(--accent-secondary);
+      }
+
+      /* Lists */
+      ul, ol {
+        margin: 0.25rem 0 0.6rem;
+        padding-left: 1.4rem;
+      }
+
+      li {
+        margin-bottom: 0.25rem;
+      }
+
+      li > ul,
+      li > ol {
+        margin-top: 0.2rem;
+        margin-bottom: 0;
+      }
+
+      /* Reference citation — the trailing italic paragraph */
+      .rule > p:last-child {
+        margin: 0.75rem 0 0;
+      }
+
+      .rule > p:last-child > em {
+        font-size: 0.8rem;
+        color: #999;
+        font-style: normal;
+      }
+
+      /* Tables */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0.75rem 0;
+        font-size: 0.9rem;
+      }
+
+      th, td {
+        padding: 0.45rem 0.75rem;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      th {
+        background: #f5f2ee;
+        font-weight: 600;
+      }
+
+      tr:nth-child(even) td {
+        background: #faf9f7;
+      }
+
+      /* Inline code */
+      code {
+        background: #f0ede8;
+        padding: 0.1em 0.4em;
+        border-radius: 3px;
+        font-size: 0.875em;
+        font-family: ui-monospace, "Cascadia Code", monospace;
+      }
+
+      /* Blockquotes (e.g. roll formula callouts) */
+      blockquote {
+        margin: 0.75rem 0;
+        padding: 0.6rem 1rem;
+        border-left: 3px solid var(--accent-secondary);
+        background: #faf7f4;
+        color: #444;
+        font-style: italic;
+      }
+
+      blockquote p {
+        margin: 0;
+      }
+
+      p {
+        margin: 0.4rem 0 0.6rem;
+      }
+    </style>
+
+    <script>
+      const input = document.getElementById("search");
+      const rules = Array.from(document.querySelectorAll(".rule"));
+
+      input.addEventListener("input", () => {
+        const query = input.value.toLowerCase();
+        for (const rule of rules) {
+          rule.hidden = query.length > 0 && !rule.textContent.toLowerCase().includes(query);
+        }
+      });
+    </script>
   </body>
 </html>
