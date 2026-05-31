@@ -21,10 +21,10 @@ Always run `bun run format` after editing TypeScript or markdown files and befor
 This is a static site generator for a tabletop RPG rules cheat-sheet. The pipeline is:
 
 ```
-rules/<game>/*.md  →  compile-static-info.ts  →  generated/*.md  →  Metalsmith  →  static/*.html
+rules/<game>/*.md  →  compile-static-info.ts  →  generated/<game>/*.md  →  Metalsmith  →  static/*.html
 ```
 
-### Rule files (`rules/dnd/*.md`)
+### Rule files (`rules/<game>/*.md`)
 
 Each file is a markdown document with YAML frontmatter:
 
@@ -43,18 +43,23 @@ Rule content...
 - `reference` can be a single string or a YAML list of strings
 - The body may have multiple `#` headings; they are promoted one level (prepended with `##`) in the final output
 
+### Adding a game system
+
+A game system directory under `rules/` is included in the build if and only if it contains a `_meta.yaml` with a `name` field:
+
+```yaml
+name: My Game
+```
+
 ### `compile-static-info.ts`
 
-- Reads all `.md` files from a rules directory, parses frontmatter with `yaml`, and validates with Zod (`ruleSchema`)
-- Writes each rule to `generated/<slug>.md` (with nunjucks-compatible frontmatter) and an `index.md` combining all rules
-- Exported functions: `loadRules(dir)` → `GameSystem`, `writeGameSystem(game, dir)`
+- `discoverSystems(rulesRoot)` — scans `rules/` for subdirectories with `_meta.yaml`, loads and validates every `.md` file in each, returns `GameSystem[]`
+- `writeGameSystem(game, dir)` — writes one `<slug>.md` per rule (with nunjucks-compatible frontmatter) plus an `index.md` combining all rules into `generated/<game>/`
+- `writeLandingPage(systems, dir)` — writes the root `generated/index.md` with a card for each system
+- Frontmatter is parsed with `yaml`, validated with Zod (`ruleSchema`)
 
 ### Metalsmith build (`build.ts`)
 
-Currently only loads `rules/dnd/`. The `rules/mothership/` and `rules/wildsea/` directories exist but are not wired into the build yet.
+Metalsmith pipeline: `generated/` → `@metalsmith/markdown` (renders `.md` to HTML) → `@metalsmith/layouts` (wraps in a nunjucks layout) → `static/`.
 
-Metalsmith pipeline: `generated/` → `@metalsmith/markdown` (renders `.md` to HTML) → `@metalsmith/layouts` (wraps in `layouts/default.nunjucks`) → `static/`.
-
-### Layout (`layouts/default.nunjucks`)
-
-Minimal HTML shell. Uses `{{ title }}` from frontmatter and `{{ contents | safe }}` for body. Inline `<style>` only — no external CSS files.
+Two layouts exist: `layouts/default.nunjucks` (individual rule pages and system index) and `layouts/landing.nunjucks` (root landing page). Layout is chosen via the `layout` frontmatter key; `default.nunjucks` is the fallback.
