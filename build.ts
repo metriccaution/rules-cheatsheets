@@ -2,7 +2,11 @@ import Metalsmith from "metalsmith";
 import layouts from "@metalsmith/layouts";
 import markdown from "@metalsmith/markdown";
 import { join } from "node:path";
-import { discoverSystems, writeLandingPage, writeGameSystem } from "compile-static-info";
+import {
+  discoverSystems,
+  writeLandingPage,
+  writeGameSystem,
+} from "compile-static-info";
 import { mkdir, rm } from "node:fs/promises";
 
 const systems = await discoverSystems(join(__dirname, "rules"));

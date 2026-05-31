@@ -28,7 +28,9 @@ export interface GameSystem {
   rules: Rule[];
 }
 
-export async function discoverSystems(rulesRoot: string): Promise<GameSystem[]> {
+export async function discoverSystems(
+  rulesRoot: string,
+): Promise<GameSystem[]> {
   const systems: GameSystem[] = [];
   for (const entry of await readdir(rulesRoot, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
@@ -41,7 +43,11 @@ export async function discoverSystems(rulesRoot: string): Promise<GameSystem[]> 
     } catch {
       continue;
     }
-    systems.push({ name: meta.name, slug, rules: await loadGame(join(rulesRoot, slug)) });
+    systems.push({
+      name: meta.name,
+      slug,
+      rules: await loadGame(join(rulesRoot, slug)),
+    });
   }
   return systems;
 }
