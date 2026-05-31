@@ -9,7 +9,7 @@ reference: Player's Handbook, page 196
     - At least half the body covered
     - +2 AC
     - +2 Dexterity saves
-  - **Three-querters cover**
+  - **Three-quarters cover**
     - At least three-quarters of the body covered
     - +5 AC
     - +5 Dexterity saves

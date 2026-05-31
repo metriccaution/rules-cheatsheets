@@ -1,5 +1,5 @@
 ---
-title: Armor and Steath
+title: Armor and Stealth
 reference: Player's Handbook, page 144
 ---
 

@@ -5,15 +5,15 @@ reference:
   - Player's Handbook, page 198
 ---
 
-- At the start of your turn, when you have 0 hit points, you roll a d20 (with no modifier) to try to avoid dying.
-  - Healing any hit points stops this process, bringing you back up
-    - Temporary hp don't bring you back up
-  - Rolling a 20 heals 1 hit point
-  - Rolling a 1 counts as two failures
-- Rolling a 10 or greater is a success
-  - Reaching 3 successes means you're stabilised - you don't need to make any more checks (though you're still at 0 hp)
-    - Unless healed, a stable creature regains 1 hit point in 1d4 hours
-  - Reaching 3 failures means you're permanently dead
+- Roll a d20 at the start of each turn while at 0 **hit points** (no modifier)
+  - 10 or higher: success; 9 or lower: failure
+  - Natural 20: regain 1 hit point
+  - Natural 1: counts as two failures
+  - Any healing ends the process and brings you above 0 hp
+    - Temporary hp don't count
+- 3 successes: **stabilised** — no more checks (still at 0 hp)
+  - Unless healed, a stable creature regains 1 hp after 1d4 hours
+- 3 failures: **dead**
 - Failures and successes are reset instantly when stable or healed
 - Taking damage adds a failure
   - Taking a critical hit is 2 failures

@@ -13,7 +13,7 @@ reference:
   - Disadvantage on perception checks based on sight
 - _Heavily obscured_
   - Vision blocked entirely
-  - Effectively _blinded_ seeing anything
+  - Treat as **Blinded**
 
 # Light Levels
 

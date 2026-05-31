@@ -13,9 +13,9 @@ reference: Player's Handbook, page 290
 
 - Can't attack the charmer
 - Can't target the charmer with harmful effects or abilities
-- Charmer has advantage on ability checks to socially interract
+- Charmer has advantage on ability checks to socially interact
 
-# Defened
+# Deafened
 
 - Can't hear
 

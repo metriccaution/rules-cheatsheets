@@ -5,10 +5,11 @@ reference: Player's Handbook, page 114
 
 # To Copy From Another Spell Book
 
-- For each level of the spell, the process takes 2 hours and costs 50 gp.
-- Once you have spent this time and money, you can prepare the spell just like your other spells.
+- 2 hours and 50 gp per spell level
+- Can then be prepared normally
 
 # Copying From a Spell Scroll.
 
-- Intelligence (Arcana) check with a DC equal to 10 + the spell's level.
-- If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.
+- **Intelligence (Arcana)** check, DC 10 + spell level
+- On success: spell is copied
+- Scroll is destroyed regardless

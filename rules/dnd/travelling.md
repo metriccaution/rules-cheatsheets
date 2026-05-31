@@ -6,7 +6,7 @@ reference:
   - Dungeon Master's Guide, page 244
 ---
 
-- When doing another activity, the character doesn't contribute their passive perception to noticing things
+- While doing a travel activity: no contribution to **passive Perception** for noticing threats
 - **Navigating** - Survival check
   - DC - `5` (open terrain), `10` (limited line of sight, e.g. hills), `15` (obscured terrain, e.g. jungle)
 - **Drawing a map** - No check required
