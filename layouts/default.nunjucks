@@ -33,7 +33,7 @@
         font-size: 1rem;
         line-height: 1.65;
         color: #1c1c1e;
-        background: #1a1a1a;
+        background: #242220;
         margin: 0;
         padding: 0;
       }
@@ -43,7 +43,7 @@
         position: sticky;
         top: 0;
         z-index: 10;
-        background: #1a1a1a;
+        background: #242220;
         padding: 0.6rem 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       }
@@ -57,8 +57,8 @@
         font-size: 1rem;
         font-family: inherit;
         color: inherit;
-        background: #fff;
-        border: 1px solid #ccc;
+        background: #f5f1eb;
+        border: 1px solid #c8c2ba;
         border-radius: 4px;
         outline: none;
       }
@@ -86,7 +86,7 @@
 
       /* Rule cards */
       .rule {
-        background: #fff;
+        background: #f5f1eb;
         border-radius: 6px;
         padding: 1.25rem 1.5rem 1rem;
         margin-bottom: 1.25rem;
@@ -107,7 +107,7 @@
         color: var(--accent-primary);
         margin: 0 0 0.75rem;
         padding-bottom: 0.35rem;
-        border-bottom: 1px solid #e8e0d8;
+        border-bottom: 1px solid #ddd5c8;
       }
 
       /* Section headings within a rule */
@@ -163,22 +163,22 @@
 
       th, td {
         padding: 0.45rem 0.75rem;
-        border: 1px solid #ddd;
+        border: 1px solid #cec8c0;
         text-align: left;
       }
 
       th {
-        background: #f5f2ee;
+        background: #ece7df;
         font-weight: 600;
       }
 
       tr:nth-child(even) td {
-        background: #faf9f7;
+        background: #f2ede6;
       }
 
       /* Inline code */
       code {
-        background: #f0ede8;
+        background: #ece7df;
         padding: 0.1em 0.4em;
         border-radius: 3px;
         font-size: 0.875em;
@@ -190,7 +190,7 @@
         margin: 0.75rem 0;
         padding: 0.6rem 1rem;
         border-left: 3px solid var(--accent-secondary);
-        background: #faf7f4;
+        background: #ece8e1;
         color: #444;
         font-style: italic;
       }

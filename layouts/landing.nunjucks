@@ -24,7 +24,7 @@
         font-size: 1rem;
         line-height: 1.65;
         color: #1c1c1e;
-        background: #1a1a1a;
+        background: #242220;
         margin: 0;
         padding: 0;
       }
@@ -49,7 +49,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: #fff;
+        background: #f5f1eb;
         border-radius: 6px;
         padding: 1.25rem 1.5rem;
         margin-bottom: 1rem;
