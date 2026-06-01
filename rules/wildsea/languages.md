@@ -19,16 +19,16 @@ Like skills, languages have ranks from 1-3. Unlike skills, ranks are named:
 
 # Language Reference
 
-| Language    | Description                                                          | Lore                                      |
-| ----------- | -------------------------------------------------------------------- | ----------------------------------------- |
-| Low Sour    | Common tongue of the waves                                           |                                           |
-| Chthonic    | Language of the ardent                                               | Cultural knowledge of the ardent, etc.    |
-| Saprekk     | Language of the ektus                                                | Cultural knowledge of the ektus, etc.     |
-| Gaudimm     | Language of the gau - complex concepts require pheromones            | Cultural knowledge of the gau, etc.       |
-| Knock       | Language of the tzelicrae - outsiders use a simplified gestural form | Cultural knowledge of the tzelicrae, etc. |
-| Brasstongue | Language of traders                                                  | Cargo routes, negotiation tactics         |
-| Raka Spit   | Language of hunting-families and leviathaneers                       | Beasts, birds of the waves, great hunts   |
-| Lyre-Bite   | Language of poets and songwriters                                    | Pre-verdant songs, whispers               |
-| Old Hand    | Sign language                                                        | Descriptions of long-lost relics          |
-| Signalling  | Flag, flare, and signal-lamp code                                    | Ships, weather, seagoing hazards          |
-| Highvin     | Pre-verdant language, primarily written                              | Pre-verdant history (fragmentary)         |
+| Language    | Description                                                          | Lore                                                      |
+| ----------- | -------------------------------------------------------------------- | --------------------------------------------------------- |
+| Low Sour    | Common tongue of the waves                                           |                                                           |
+| Chthonic    | Language of the ardent                                               | Cultural knowledge of the ardent, spirits, ancient humans |
+| Saprekk     | Language of the ektus                                                | Cultural knowledge of the ektus, deserts, heat            |
+| Gaudimm     | Language of the gau - complex concepts require pheromones            | Cultural knowledge of the gau, caves, rot, fungus         |
+| Knock       | Language of the tzelicrae - outsiders use a simplified gestural form | Cultural knowledge of the tzelicrae, insects              |
+| Brasstongue | Language of traders                                                  | Cargo routes, negotiation tactics                         |
+| Raka Spit   | Language of hunting-families and leviathaneers                       | Beasts, birds of the waves, great hunts                   |
+| Lyre-Bite   | Language of poets and songwriters                                    | Pre-verdant songs, whispers                               |
+| Old Hand    | Sign language                                                        | Descriptions of long-lost relics                          |
+| Signalling  | Flag, flare, and signal-lamp code                                    | Ships, weather, seagoing hazards                          |
+| Highvin     | Pre-verdant language, primarily written                              | Pre-verdant history (fragmentary)                         |
