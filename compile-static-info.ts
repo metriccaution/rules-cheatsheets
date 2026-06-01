@@ -59,7 +59,12 @@ export async function writeGameSystem(
   await Promise.all(
     game.rules.map(async (rule) => {
       const targetFile = join(outputDirectory, `${rule.slug}.md`);
-      await writeFile(targetFile, ruleToMarkdown(rule), "utf-8");
+      const content = [
+        `---\n${yaml.stringify({ title: rule.title })}---`,
+        `<p><a class="back-link" href="./">← ${game.name}</a></p>`,
+        ruleToMarkdown(rule, false),
+      ].join("\n\n");
+      await writeFile(targetFile, content, "utf-8");
     }),
   );
 
@@ -67,7 +72,9 @@ export async function writeGameSystem(
     join(outputDirectory, "index.md"),
     `---\n${yaml.stringify({ title: game.name })}---\n\n<p><a class="back-link" href="../">← All Systems</a></p>\n\n# ${game.name}\n\n` +
       indentTitles(
-        game.rules.map((r) => ruleToMarkdown(r, false)).join("\n\n"),
+        game.rules
+          .map((r) => ruleToMarkdown(r, false, `./${r.slug}`))
+          .join("\n\n"),
       ),
   );
 }
@@ -145,13 +152,15 @@ async function parseMarkdown(fileName: string, rawText: string): Promise<Rule> {
 function ruleToMarkdown(
   rule: Rule,
   includeFrontmatter: boolean = true,
+  titleLink?: string,
 ): string {
+  const titleText = titleLink ? `[${rule.title}](${titleLink})` : rule.title;
   return [
     includeFrontmatter
       ? `---\n${yaml.stringify({ title: rule.title })}---`
       : "",
     '<section class="rule markdown">',
-    `# ${rule.title}`,
+    `# ${titleText}`,
     indentTitles(rule.content),
     "</section>",
   ]

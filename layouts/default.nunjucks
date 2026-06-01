@@ -110,6 +110,18 @@
         border-bottom: 1px solid #ddd5c8;
       }
 
+      /* Links inside rule title headings */
+      .rule > h1 a,
+      .rule > h2 a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .rule > h1 a:hover,
+      .rule > h2 a:hover {
+        text-decoration: underline;
+      }
+
       /* Section headings within a rule */
       .rule h3,
       .rule h4 {
