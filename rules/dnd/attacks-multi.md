@@ -5,8 +5,7 @@ reference:
   - Player's Handbook, page 190
 ---
 
-- When you take the attack action, make multiple attacks
-- The attacks don't have to target the same creature
-- When making a multi-attack, you can move between the attacks, and split the attack between multiple targets.
-- Multiple sources of multi-attack don't stack
-- Grappling / shoving only takes one of your attacks
+- When you take the **Attack action**, make multiple attacks
+- The attacks don't have to target the same creature; you can move between them and split across multiple targets
+- Multiple sources of **multi-attack** don't stack
+- Use one attack to **Grapple** or **Shove**

@@ -5,8 +5,8 @@ reference:
 ---
 
 - Casts at the lowest possible level
-- This doesn't use a spell slot
+- This doesn't use a **spell slot**
 - The spell requires no components, unless otherwise stated
-- If the spell requires a spell casting ability (e.g. for a spell save DC), use your own
+- If the spell requires a **spellcasting ability** (e.g. for a **spell save DC**), use your own
   - If you have multiple, pick one
-  - If you don't have one, its `+0`, don't add proficiency
+  - If you don't have one, it's `+0`, don't add proficiency

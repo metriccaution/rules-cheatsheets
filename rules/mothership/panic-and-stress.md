@@ -16,7 +16,7 @@ reference:
 - Make a **panic check** whenever
   - You roll a **critical failure**
   - Dramatically appropriate events (e.g. witnessing death, encountering strange entities)
-  - Literally whenever **you** want to
+  - Whenever you choose to
 - When you need to make a **panic check**, roll a d20
-  - Equal to or over your stress - Success
-  - Under - Failure, consult the panic table
+  - Greater than your stress - Success
+  - Equal to or under - Failure, consult the panic table

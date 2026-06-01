@@ -15,8 +15,8 @@ reference:
 
 # Spell Save DC
 
-`8` + proficiency bonus + spellcasting ability modifier
+`8` + **proficiency bonus** + **spellcasting ability modifier**
 
 # Spell Attack Modifier
 
-proficiency bonus + spellcasting ability modifier
+**proficiency bonus** + **spellcasting ability modifier**

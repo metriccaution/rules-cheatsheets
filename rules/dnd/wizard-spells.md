@@ -8,7 +8,7 @@ reference: Player's Handbook, page 114
 - 2 hours and 50 gp per spell level
 - Can then be prepared normally
 
-# Copying From a Spell Scroll.
+# Copying From a Spell Scroll
 
 - **Intelligence (Arcana)** check, DC 10 + spell level
 - On success: spell is copied

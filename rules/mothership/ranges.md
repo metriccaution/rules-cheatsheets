@@ -5,7 +5,7 @@ reference:
   - Player's Survival Guide, page 31
 ---
 
-- Descriptions, rather than measures
+- Ranges are described qualitatively, not as fixed distances
 
 | Description   | Explanation    |
 | ------------- | -------------- |

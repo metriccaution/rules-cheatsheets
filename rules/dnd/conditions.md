@@ -6,14 +6,14 @@ reference: Player's Handbook, page 290
 # Blinded
 
 - Can't see
-- Attacks against the creature have advantage
-- Creature's attacks have disadvantage
+- Attacks against the creature have **advantage**
+- Creature's attacks have **disadvantage**
 
 # Charmed
 
 - Can't attack the charmer
 - Can't target the charmer with harmful effects or abilities
-- Charmer has advantage on ability checks to socially interact
+- Charmer has **advantage** on ability checks to socially interact
 
 # Deafened
 
@@ -22,8 +22,8 @@ reference: Player's Handbook, page 290
 # Frightened
 
 - While in line of sight of the source of fear
-  - Disadvantage on ability checks
-  - Disadvantage on attacks
+  - **Disadvantage** on ability checks
+  - **Disadvantage** on attacks
 - Can't willingly move closer to the source of fear
 
 # Grappled
@@ -38,14 +38,14 @@ reference: Player's Handbook, page 290
 # Invisible
 
 - Impossible to see
-- Attack rolls have against the creature have disadvantage
-- Creature's attack rolls have advantage
+- Attack rolls against the creature have **disadvantage**
+- Creature's attack rolls have **advantage**
 
 # Paralyzed
 
 - Can't take actions or reactions
 - Fails Strength and Dexterity checks
-- Attack rolls have against the creature have advantage
+- Attack rolls against the creature have **advantage**
 - Melee hits auto-crit
 
 # Petrified
@@ -53,38 +53,38 @@ reference: Player's Handbook, page 290
 - Can't take actions or reactions
 - Turned to stone
 - Fails Strength and Dexterity checks
-- Attack rolls have against the creature have disadvantage
-- Resistance to damage
+- Attack rolls against the creature have **disadvantage**
+- **Resistance** to damage
 - Immune to poison and disease
 
 # Poisoned
 
-- Disadvantage on attacks and ability checks
+- **Disadvantage** on attacks and ability checks
 
 # Prone
 
-- Disadvantage on attack rolls
-- Melee attacks on the creature have advantage
-- Ranged attacks on the creature have disadvantage
+- **Disadvantage** on attack rolls
+- Melee attacks on the creature have **advantage**
+- Ranged attacks on the creature have **disadvantage**
 
 # Restrained
 
 - Speed is 0
-- Attacks against the creature have advantage
-- Creature's attacks have disadvantage
-- Disadvantage on Dexterity saves
+- Attacks against the creature have **advantage**
+- Creature's attacks have **disadvantage**
+- **Disadvantage** on Dexterity saves
 
 # Stunned
 
 - Can't take actions or reactions
 - Can't move, can barely speak
 - Fails Strength and Dexterity checks
-- Attacks against the creature have advantage
+- Attacks against the creature have **advantage**
 
 # Unconscious
 
 - Can't take actions or reactions
 - Fall prone
 - Fails Strength and Dexterity checks
-- Attacks against the creature have advantage
+- Attacks against the creature have **advantage**
 - Melee hits auto-crit

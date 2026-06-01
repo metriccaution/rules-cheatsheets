@@ -13,19 +13,19 @@ reference: Player's Handbook, page 192
 
 # Dodge
 
-- Any attacks against you have disadvantage this turn
+- Any attacks against you have **disadvantage** this turn
   - Only if you can see the attacker
-- Dexterity saving throws with advantage
+- Dexterity saving throws with **advantage**
 - Stops if your speed is 0
 
 # Help
 
 - Aid another creature
 - Help with a _task_
-  - They get advantage on their next ability check
+  - They get **advantage** on their next ability check
   - Lasts until your next turn
 - Help with an _attack_
-  - They get advantage on their next attack
+  - They get **advantage** on their next attack
   - Hostile creature must be within 5 feet
   - Lasts until your next turn
 
@@ -35,15 +35,6 @@ reference: Player's Handbook, page 192
 
 # Ready Action
 
-1. Decide on a trigger
-2. Choose a response to the trigger
-   1. An action
-   2. A movement
-3. When the trigger occurs, take the action, or don't
-
-- Your reaction is used when you take the action
-- If you ready a spell
-  - Cast as normal, then hold the effects
+- Declare a trigger and a response (action or movement); uses your **reaction**
+- Readying a spell requires **concentration**; it dissipates if unused
   - Must have a casting time of an action
-  - Readying a spell requires concentration
-  - If the spell isn't used, it dissipates

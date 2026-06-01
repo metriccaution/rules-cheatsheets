@@ -3,7 +3,7 @@ title: Prices (Lifestyle Expenses)
 reference: Player's Handbook, page 157
 ---
 
-Consolidated costs of living, including accomodation, food, gear maintainance
+Consolidated costs of living, including accommodation, food, gear maintenance
 
 | Type         | Cost Per Day    |
 | ------------ | --------------- |

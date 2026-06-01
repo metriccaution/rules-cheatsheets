@@ -14,7 +14,7 @@ reference: Player's Handbook, page 203
 | Necromancy    | Manipulating life energy, raising the dead     |
 | Transmutation | Changing one thing into another                |
 
-- Abjuration
+- **Abjuration**
   - Absorb elements
   - Alarm
   - Banish
@@ -22,42 +22,42 @@ reference: Player's Handbook, page 203
   - Mage armor
   - Sanctuary
   - Shield
-- Conjuration
+- **Conjuration**
   - Conjure Celestial
   - Demiplane
   - Find Familiar
   - Maze
   - Teleport
   - Wish
-- Divination
+- **Divination**
   - Contact Other Plane
   - Detect Magic
   - Identify
   - Scrying
-- Enchantment
+- **Enchantment**
   - Bless
   - Confusion
   - Enthrall
   - Hold Person
   - Irresistible Dance
   - Zone of Truth
-- Evocation
+- **Evocation**
   - Chain Lightning
   - Cure Wounds
   - Fireball
   - Telepathy
   - Wall of Stone
-- Illusion
+- **Illusion**
   - Blur
   - Fear
   - Invisibility
   - Minor Illusion
-- Necromancy
+- **Necromancy**
   - Animate Dead
   - False Life
   - Gentle Repose
   - Resurrection
-- Transmutation
+- **Transmutation**
   - Alter Self
   - Awaken
   - Enhance Ability

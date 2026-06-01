@@ -19,4 +19,4 @@ reference:
   - Taking a critical hit is 2 failures
   - While unconscious, attacks have advantage, and attacks from within 5 feet are automatic criticals
   - If you take more damage than your hit-point maximum, you automatically die
-- A creature can make a DC 10 Medicine check to stablise another creature
+- Make a DC 10 **Medicine** check to stabilise another creature

@@ -5,19 +5,19 @@ reference: Player's Handbook, page 145
 
 # Light
 
-- Calculate your AC by adding your _Dexterity_ modifier to the base number in the armor type.
+- Calculate your **AC** by adding your **Dexterity** modifier to the base number in the armor type.
 
 # Medium
 
-- Calculate your AC by adding your _Dexterity_ modifier, to a maximum of +2, to the base number in the armor type.
+- Calculate your **AC** by adding your **Dexterity** modifier, to a maximum of +2, to the base number in the armor type.
 
 # Heavy
 
-- Your AC is the base number of the armor type.
+- Your **AC** is the base number of the armor type.
 
 # Shield
 
-- All types of shield add +2 to your armor class.
+- All types of shield add +2 to your **AC**.
 
 # Armor Types
 

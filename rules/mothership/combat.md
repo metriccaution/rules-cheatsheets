@@ -15,6 +15,7 @@ reference:
 
 - Make a **Combat** check
 - On success, roll weapon damage and subtract from the target’s **Health**
+- On failure, gain 1 **stress**
 
 # Armor
 
@@ -24,4 +25,5 @@ reference:
 
 # Cover
 
-- Cover has AP (5-20)
+- Cover provides AP (between 5-20 depending on how strong it is)
+- Heavy cover also provides DR 5

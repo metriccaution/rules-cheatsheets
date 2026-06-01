@@ -6,9 +6,9 @@ reference:
 ---
 
 - Take the **Hide action** to attempt to conceal yourself
-- Make a Dexterity (Stealth) check
+- Make a **Dexterity** (Stealth) check
   - This result is compared against the **passive Perception** of any creature that might notice you
-  - A creature actively searching makes a Wisdom (Perception) check against your roll instead
+  - A creature actively searching makes a **Wisdom** (Perception) check against your roll instead
 - You need to be practically able to hide yourself, e.g. **lightly obscured**, or **heavily obscured**
 - You can't hide from a creature that can see you clearly
 

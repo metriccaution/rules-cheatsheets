@@ -3,8 +3,8 @@ title: Spending Hit Dice
 reference: Player's Handbook, page 186
 ---
 
-- Hit dice determined by the class
-- To spend one, roll it, add your Constitution modifier, add it to your health
+- Your **Hit Die** is determined by your class
+- To spend one, roll it, add your **Constitution** modifier, add it to your **hit points**
 
 | Class     | Hit Dice |
 | --------- | -------- |

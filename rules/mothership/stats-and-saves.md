@@ -6,8 +6,6 @@ reference:
 
 # Stats
 
-Fairly self-explanatory:
-
 - **Strength**
 - **Speed**
 - **Intellect**

@@ -20,4 +20,4 @@ reference: Dungeon Master's Guide 246
 | Medium | 4 (1d8)  | 18 (4d8)  |
 | Large  | 5 (1d10) | 27 (5d10) |
 
-Some particularly resilient objects have a _damage threshold_ where they don't take damage unless they take _at least_ a particular amount from a single attack.
+Some particularly resilient objects have a **damage threshold** where they don't take damage unless they take _at least_ a particular amount from a single attack.

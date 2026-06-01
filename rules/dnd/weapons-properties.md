@@ -11,29 +11,29 @@ reference: Player's Handbook, page 146
 
 # Finesse
 
-- Choose Strength or Dexterity for calculating attack and damage bonus
+- Choose **Strength** or **Dexterity** for calculating attack and damage bonus
 
 # Heavy
 
-- Small creatures get disadvantage
+- Small creatures get **disadvantage**
 
 # Light
 
-- Suitable for two weapon fighting
+- Suitable for **two weapon fighting**
 
 # Loading
 
-- Negates multi-attack
+- Negates **multi-attack**
 
 # Range
 
 - (Normal / Long) range
-- Long range attacks at disadvantage
+- Long range attacks at **disadvantage**
 
 # Reach
 
 - Add range to attacks for melee weapons
-- Also affects attacks of opportunity
+- Also affects **attacks of opportunity**
 
 # Thrown
 
