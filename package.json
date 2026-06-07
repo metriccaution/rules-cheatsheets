@@ -12,7 +12,7 @@
     "@metalsmith/layouts": "^3.0.0",
     "@metalsmith/markdown": "^1.10.0",
     "jstransformer-nunjucks": "^1.2.0",
-    "marked": "^17.0.6",
+    "marked": "^18.0.5",
     "metalsmith": "^2.7.0",
     "zod": "^4.4.3"
   },
