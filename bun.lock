@@ -8,15 +8,15 @@
         "@metalsmith/layouts": "^3.0.0",
         "@metalsmith/markdown": "^1.10.0",
         "jstransformer-nunjucks": "^1.2.0",
-        "marked": "^17.0.1",
+        "marked": "^18.0.5",
         "metalsmith": "^2.7.0",
-        "zod": "^4.1.13",
+        "zod": "^4.4.3",
       },
       "devDependencies": {
         "@types/bun": "latest",
-        "prettier": "^3.7.4",
+        "prettier": "^3.8.3",
         "serve": "^14.2.6",
-        "yaml": "^2.8.2",
+        "yaml": "^2.9.0",
       },
     },
   },
@@ -157,7 +157,7 @@
 
     "lodash.clonedeepwith": ["lodash.clonedeepwith@4.5.0", "", {}, "sha512-QRBRSxhbtsX1nc0baxSkkK5WlVTTm/s48DSukcGcWZwIyI8Zz+lB+kFiELJXtzfH4Aj6kMWQ1VWW4U5uUDgZMA=="],
 
-    "marked": ["marked@17.0.6", "", { "bin": { "marked": "bin/marked.js" } }, "sha512-gB0gkNafnonOw0obSTEGZTT86IuhILt2Wfx0mWH/1Au83kybTayroZ/V6nS25mN7u8ASy+5fMhgB3XPNrOZdmA=="],
+    "marked": ["marked@18.0.5", "", { "bin": { "marked": "bin/marked.js" } }, "sha512-S6GcvALHg6K4ohtu4E7x0a1AqhAjp6cV8KhLSyN9qVapnzJkusVBxZRcIU9AeYsbe6P1hKDusSbEOzGyyuce6w=="],
 
     "merge-stream": ["merge-stream@2.0.0", "", {}, "sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w=="],
 
