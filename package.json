@@ -12,14 +12,14 @@
     "@metalsmith/layouts": "^3.0.0",
     "@metalsmith/markdown": "^1.10.0",
     "jstransformer-nunjucks": "^1.2.0",
-    "marked": "^18.0.10",
+    "marked": "^18.0.13",
     "metalsmith": "^2.7.0",
-    "zod": "^4.4.3"
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.7",
     "serve": "^14.2.6",
-    "yaml": "^2.9.0"
+    "yaml": "^2.9.1"
   }
 }
